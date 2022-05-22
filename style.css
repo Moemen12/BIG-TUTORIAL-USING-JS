@@ -1,0 +1,99 @@
+
+/*
+
+                                               first 6 video in big tutorial JS/make a slider
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Tahoma,arial;
+}
+.slider-container{
+    margin: 10px auto;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.slider-container img{
+    position: absolute;
+    opacity: 0;
+    transition:  opacity 1s;
+    z-index: 1;
+}
+
+.slider-container img.active{
+    opacity: 1;
+}
+.slider-container .slide-number {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(0, 0, 0, .6);
+    color: #FFF;
+    padding: 5px 10px;
+    font-size: 20px;
+    z-index: 2;
+    border-radius: 6px;
+  }
+
+  .slider-controls {
+    width: 400px;
+    margin: auto;
+ overflow: hidden;
+   
+  }
+  .slider-controls .prev,
+.slider-controls .next {
+  background-color: #009688;
+  color: #FFF;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px;
+  user-select: none;
+  width: 20%;
+}
+.slider-controls .prev {
+    float: left;
+  }
+  .slider-controls .next {
+    float: right;
+  }
+
+  .slider-controls .prev.disabled,
+  .slider-controls .next.disabled {
+    background-color: rgba(0, 150, 136, 0.5);
+    cursor: no-drop;
+  }
+  .slider-controls .indicators {
+    width: 60%;
+    float: left;
+  }
+  .slider-controls .indicators ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+  }
+  .slider-controls .indicators ul li {
+    display: inline-block;
+    background-color: #F6F6F6;
+    color: #333;
+    font-weight: bold;
+    height: 28px;
+    width: 28px;
+    border-radius: 4px;
+    margin: 0 2px;
+    line-height: 28px;
+    cursor: pointer;
+  }
+  .slider-controls .indicators ul li.active {
+    background-color: #009688;
+    color: #FFF;
+  }
