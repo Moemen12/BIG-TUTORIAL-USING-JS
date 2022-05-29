@@ -1,0 +1,208 @@
+
+/*
+
+                                                  Memory game
+ 
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.parent {
+    background:#2196f3e6;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    }
+    .child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    #startButton{
+        background-color:red;
+        color: white;
+        border: transparent;
+        border-radius: 3px;
+        padding:5px 7px;
+        cursor: pointer;
+    }
+
+    
+    .nextPage{
+        display:none;
+    }
+    .newPage{
+        width: 100%;
+        height: 8.5%;
+        
+
+    }
+      ul .list1:last-child{
+         float: right;
+    }
+    .menu .list1{
+        display:inline;
+        font-family: tahoma,sans-serif;
+        font-size: 15px;
+        
+
+    }
+   .menu{
+     border: 2px solid blue;
+     background-color: whitesmoke;
+     padding: 1%;
+
+   }
+.grid-container{
+    background-color: forestgreen;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+    padding: 20px;
+
+}
+.grid-container div{
+   
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    
+}
+   .game{
+       display: none;
+   }
+  div img{
+     
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+  }
+  
+  .pic{
+      position: absolute;
+      top: 0;
+      left: 0;
+
+  }
+
+  .card{
+      position: relative;
+  }
+
+  .null-pic{
+   z-index: 3;
+  }
+  .card.selected .card-pic{
+      z-index: 5;
+  }
+
+                                                            Memory game
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, Tahoma, sans-serif;
+  }
+  .control-buttons {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(3, 169, 244, 0.9);
+  }
+  .control-buttons span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F44336;
+    color: #FFF;
+    padding: 15px 25px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .info-container {
+    width: 1080px;
+    margin: 20px auto 0;
+    background-color: #F6F6F6;
+    padding: 20px;
+    font-size: 24px;
+    overflow: hidden;
+    border: 2px solid #2196f3;
+  }
+  .info-container .name {
+    float: left;
+    width: 50%;
+  }
+  .info-container .tries {
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+  .memory-game-blocks {
+    display: flex;
+    width: 1100px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+  }
+  .memory-game-blocks.no-clicking {
+    pointer-events: none;
+  }
+  .memory-game-blocks .game-block {
+    height: 200px;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex: 1 0 200px;
+    margin: 0 10px 20px;
+  }
+  .memory-game-blocks .game-block .front {
+    background-color: #333;
+    line-height: 200px;
+  }
+  .memory-game-blocks .game-block .front:before {
+    content: '!';
+    color: #FFF;
+    font-size: 140px;
+    font-weight: bold;
+  }
+  .memory-game-blocks .game-block .back {
+    background-color: #607D8B;
+    transform: rotateY(180deg);
+  }
+  .memory-game-blocks .game-block .back img {
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+  }
+  .memory-game-blocks .game-block .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    border: 5px solid #2196F3;
+  }
+  .memory-game-blocks .game-block.is-flipped,
+  .memory-game-blocks .game-block.has-match {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    pointer-events: none;
+  }
+
+  */
